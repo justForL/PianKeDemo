@@ -13,6 +13,7 @@
 		18857ECD1CCA63BA004DACD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18857ECB1CCA63BA004DACD5 /* Main.storyboard */; };
 		18857ECF1CCA63BA004DACD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18857ECE1CCA63BA004DACD5 /* Assets.xcassets */; };
 		18857ED21CCA63BA004DACD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18857ED01CCA63BA004DACD5 /* LaunchScreen.storyboard */; };
+		18857EDB1CCA63E3004DACD5 /* LJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18857EDA1CCA63E3004DACD5 /* LJViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		18857ECE1CCA63BA004DACD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18857ED11CCA63BA004DACD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18857ED31CCA63BA004DACD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18857ED91CCA63E3004DACD5 /* LJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJViewController.h; sourceTree = "<group>"; };
+		18857EDA1CCA63E3004DACD5 /* LJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				18857EC61CCA63BA004DACD5 /* AppDelegate.m */,
 				18857EC81CCA63BA004DACD5 /* ViewController.h */,
 				18857EC91CCA63BA004DACD5 /* ViewController.m */,
+				18857ED91CCA63E3004DACD5 /* LJViewController.h */,
+				18857EDA1CCA63E3004DACD5 /* LJViewController.m */,
 				18857ECB1CCA63BA004DACD5 /* Main.storyboard */,
 				18857ECE1CCA63BA004DACD5 /* Assets.xcassets */,
 				18857ED01CCA63BA004DACD5 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			files = (
 				18857ECA1CCA63BA004DACD5 /* ViewController.m in Sources */,
 				18857EC71CCA63BA004DACD5 /* AppDelegate.m in Sources */,
+				18857EDB1CCA63E3004DACD5 /* LJViewController.m in Sources */,
 				18857EC41CCA63BA004DACD5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

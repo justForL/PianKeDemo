@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LJViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +17,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    LJViewController *vc = [[LJViewController alloc]initWithMenuControllerAndDetailControlerWithButtonTitle:@"Trigger"];
+    
+    vc.menuItems = @[@"今日 · Today",
+                     @"电台 · Radio",
+                     @"阅读 · Reading",
+                     @"话题 · Topics",
+                     @"音乐 · Music",
+                     @"良品 · Products"];
+    
+    NSMutableArray *arrM = [NSMutableArray array];
+    
+    for (int i = 0; i < 50; ++i) {
+        [arrM addObject:[NSString stringWithFormat:@"%d",i]];
+    }
+    
+    vc.detailItems = arrM.copy;
+
+    
+    [vc prefersStatusBarHidden];
+    
+    self.window.rootViewController = vc;
+        
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
